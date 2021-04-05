@@ -3,8 +3,20 @@ body {
     background: url("../pics/bg-body.jpg") fixed;
     font-family:'Courier New', monospace;
 }
+.content {
+    background: lightsalmon;
+}
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 * { 
     box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1000px;
+  margin: 0 auto;
 }
 header {
       background: url("../pics/bg-header.jpg");
@@ -13,4 +25,12 @@ header {
     font-weight: 600;
     text-shadow: 0 0 20px  rgba(0, 0, 0, .8);
     padding: 20px 60px;
+}
+nav {
+    width: 25%;
+    float: left;
+}
+main {
+    width: 75%;
+    float: left;
 }
